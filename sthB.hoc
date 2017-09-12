@@ -36,6 +36,13 @@ for i = 0, ndend-1 dend[i] {
     e_pas = -60.0
 } 
 
+proc block_sodium(){
+	soma gnabar_hh = 0
+}
+
+// block_sodium()
+
+
 // Connect things together
 connect dend[0](0), soma(0)
 connect dend[1](0), soma(1)
@@ -50,3 +57,6 @@ stim.dur = 100
 stim.amp = 0.1
 
 tstop = 300
+
+
+
